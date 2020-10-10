@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">TestApp_GlyCalc_1</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="other_useful_information">If you are not familiar with how this App works, simply enter some of the following measurements, if available. The application will take the two nutritional facts from the next meal, entered below, and returns the recommended dose of insulin to be given, along with some other useful information.</string>
+    <string name="greeting">greeting</string>
+    <string name="insulin_rec">The recommended dose of insulin, given the values above, is ~ %1$d units.</string>
+    <string name="g_increase">The mg/dl increase from sugar is..\n\t\t ~ %1$d mg/dL</string>
+    <string name="c_increase">The mg/dl increase from carbs is..\n\t\t ~ %1$d mg/dL</string>
+    <string name="gc_increase">The mg/dl increase from boths sugars and carbs is..\n\t\t ~ %1$d mg/dL</string>
+
+    <string name="range">
+        &#032;•Range-Before Meal: 80-140 mg/dL\n
+        •Range-After Meal: &lt;180 mg/dL
+    </string>
+
+    <string name="when_to_check">
+        &#032;•Before or After a Meal\n
+        •Before or After exercise\n
+        •Before bed and after waking in the morning\n\n
+        *If you begin to feel new or worsening symptoms contact your doctor immediately.
+    </string>
+
+    <string name="greeting_title">Welcome to the Glycemic Calculator</string>
+    <string name="weight_lb">Weight (lb)</string>
+    <string name="recent_bs_prompt">Recent BS </string>
+    <string name="sugars_prompt">Sugars (g)</string>
+    <string name="carbs_prompt">Carbs (g)</string>
+    <string name="recommended_prompt">Displays the recommended dose of insulin given the values above.</string>
+    <string name="sugar_contrib_result">Displays the mg/dL contribution from Sugars.</string>
+    <string name="carb_contrib_result">Displays the mg/dL contribution from Carbohydrates.</string>
+    <string name="both_contribs_result">Displays the total Increase in mg/dL from both Sugars and Carbohydrates.</string>
+    <string name="calculate">Calculate</string>
+    <string name="tracker_prompt">Here you can enter the results of your recent blood sugar tests and view them in a chart on the next tab.</string>
+    <string name="tvname">tvName</string>
+    <string name="recent_meal_details">Recent Meal Details:</string>
+    <string name="add">ADD</string>
+    <string name="view">VIEW</string>
+    <string name="last_insulin_dose">Last Insulin Dose:</string>
+    <string name="recent_bs">Recent BS:</string>
+    <string name="BS_PlaceHolder">Blood Sugar: %1$d mg/dL</string>
+    <string name="LD_PlaceHolder">Last Insulin Dose: %1$d units</string>
+    <string name="MD_PlaceHolder">Recent Meal Details: %1$s</string>
+
+
+</resources>

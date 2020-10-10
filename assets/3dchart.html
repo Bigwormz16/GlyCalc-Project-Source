@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdn.anychart.com/releases/v8/js/anychart-base.min.js?hcode=c11e6e3cfefb406e8ce8d99fa8368d33"></script>
+    <script src="https://cdn.anychart.com/releases/v8/js/anychart-ui.min.js?hcode=c11e6e3cfefb406e8ce8d99fa8368d33"></script>
+    <script src="https://cdn.anychart.com/releases/v8/js/anychart-exports.min.js?hcode=c11e6e3cfefb406e8ce8d99fa8368d33"></script>
+    <script src="https://cdn.anychart.com/releases/v8/js/anychart-cartesian-3d.min.js?hcode=c11e6e3cfefb406e8ce8d99fa8368d33"></script>
+    <link href="https://cdn.anychart.com/releases/v8/css/anychart-ui.min.css?hcode=c11e6e3cfefb406e8ce8d99fa8368d33" type="text/css" rel="stylesheet">
+    <link href="https://cdn.anychart.com/releases/v8/fonts/css/anychart-font.min.css?hcode=c11e6e3cfefb406e8ce8d99fa8368d33" type="text/css" rel="stylesheet">
+    <style type="text/css">
+
+    html,
+    body,
+    #container {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+</style>
+</head>
+<body>
+
+<div id="container"></div>
+
+
+<script>
+
+    anychart.onDocumentReady(function() {
+      // create data set on our data
+      var chartData = {
+        title: 'Top 10 Products by Profit',
+        header: ['#', 'Florida', 'Texas', 'Nevada', 'Arizona'],
+        rows: [
+          ['Powder', 11861, 10919, -8034, 18012],
+          ['Mascara', 11261, 10419, -6134, 18712],
+          ['Lip gloss', 22998, 12043, 4572, -4008],
+          ['Foundation', 10342, 10119, -5231, 13701],
+          ['Eyeliner', 12321, 15067, 3417, -5432],
+          ['Eyeshadows', 12998, 12043, -4572, -3308],
+          ['Lipstick', 8814, 9054, 4376, -9256],
+          ['Rouge', 11624, -7004, -3574, 5221],
+          ['Eyebrow pencil', 13012, -5067, -3987, -3932],
+          ['Nail polish', 12814, -3054, -4376, -4229]
+        ]
+      };
+
+      // create column column3d
+      var column3d = anychart.column3d();
+
+      // set column3d data
+      column3d.data(chartData);
+
+      // force column3d to stack values by Y scale.
+      column3d.yScale().stackMode('value');
+
+      // set column3d padding
+      column3d.padding([10, 20, 5, 20]);
+
+      column3d.yAxis().title('Profit in Dollars');
+      column3d.yAxis().labels().format('{%Value}');
+      column3d.xAxis().title('Products by Profit');
+
+      column3d.barsPadding(0.1)
+        .barGroupsPadding(0.9);
+
+      // turn on legend
+      column3d.legend()
+        .enabled(true)
+        .fontSize(13)
+        .padding([0, 0, 20, 0]);
+
+      // set interactivity settings
+      column3d.interactivity().hoverMode('by-x');
+
+      // set tooltip settings
+      column3d.tooltip().displayMode('union');
+
+      // set container id for the column3d
+      column3d.container('web_view');
+
+      // initiate column3d drawing
+      column3d.draw();
+    });
+
+</script>
+</body>
+</html>

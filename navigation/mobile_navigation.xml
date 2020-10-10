@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_glycalc">
+
+    <fragment
+        android:id="@+id/nav_glycalc"
+        android:name="com.example.testapp_glycalc_1.ui.home.GlyCalcFragment"
+        android:label="GlyCalc"
+        tools:layout="@layout/fragment_glycalc" />
+
+    <fragment
+        android:id="@+id/nav_tracker"
+        android:name="com.example.testapp_glycalc_1.ui.dashboard.TrackerFragment"
+        android:label="Tracker"
+        tools:layout="@layout/fragment_tracker" />
+
+    <fragment
+        android:id="@+id/nav_visualize"
+        android:name="com.example.testapp_glycalc_1.ui.notifications.VisualizeFragment"
+        android:label="Visualize"
+        tools:layout="@layout/fragment_visualize" />
+</navigation>
