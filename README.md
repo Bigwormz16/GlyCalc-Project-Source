@@ -1,4 +1,5 @@
 GlyCalc
+
 GlyCalc is an Android application designed to help Type 2 diabetes patients manage and monitor their blood sugar levels.
 The app allows users to log their blood sugar readings, maintain a food diary, and visualize trends and patterns in their blood sugar levels over time.
 This tool aims to provide valuable insights into the relationship between eating habits and blood sugar levels, aiding users in making informed decisions about their health.
