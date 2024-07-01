@@ -17,30 +17,41 @@ To get started with GlyCalc, follow these steps:
 
 Clone the repository:
 bash
+
 Copy code
+
 git clone https://github.com/Bigwormz16/GlyCalc-Project-Source.git
+
 Open the project in Android Studio.
+
 Build the project to download the necessary dependencies.
+
 Run the application on an Android emulator or a physical device.
-Usage
-Tracking Blood Sugar Levels
+Usage: 
+Tracking Blood Sugar Levels.
 Open the app and navigate to the Tracker tab.
 Enter your blood sugar reading and the corresponding timestamp.
 Save the entry to add it to your log.
-Logging Food Intake
+
+Logging Food Intake: 
 Navigate to the Food Log tab.
 Add details about your meals, including the type of food, portion size, and time of consumption.
 Save the entry to update your food log.
-Visualizing Data
+
+Visualizing Data: 
 Navigate to the Chart tab.
 Select the date range for which you want to view the data.
 Analyze the charts to identify trends and patterns in your blood sugar levels.
-Contributing
+
+Contributing: 
 We welcome contributions to improve GlyCalc. If you have suggestions for new features or enhancements, please open an issue or submit a pull request. Follow these steps to contribute:
 
 Fork the repository.
+
 Create a new branch:
+
 bash
+
 Copy code
 git checkout -b feature/your-feature-name
 Commit your changes:
