@@ -49,22 +49,13 @@ We welcome contributions to improve GlyCalc. If you have suggestions for new fea
 Fork the repository.
 
 Create a new branch:
-
-bash
-
-Copy code
 git checkout -b feature/your-feature-name
+
 Commit your changes:
-bash
-Copy code
 git commit -m 'Add your feature'
+
 Push to the branch:
-bash
-Copy code
 git push origin feature/your-feature-name
-Open a pull request.
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
 
 Contact
 For questions or support, please contact us at support@bloodsugartracker.com.
